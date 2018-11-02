@@ -1,8 +1,8 @@
 <?php
 
 	// Pulls data elements used through out the entier website
-		require_once 'menu.data.php';
-	
+		require_once 'content.data.php';
+
 	// Pulls functionsused through out the entier website
 		require_once 'functions.inc.php';
 
@@ -10,7 +10,7 @@
 	     The following will be passed along to Javascript by establising
 		 variables in PHP and passing them into the HTML via Global
 		 JavaScript variables the same names used for PHP
-		 
+
 	*/
 
 $siteName = 'inside out | 2xx';
@@ -55,6 +55,6 @@ $siteName = 'inside out | 2xx';
                <h1><a href="index.php"><?php echo $siteName; ?></a></h1>
                <h2>continuously falling forward in to the light...</h2>
 			  <nav>
-				  <?php echo menuBuilder($menuItems); ?>
+				  <?php echo menuBuilder($content['pages']); ?>
 			  </nav>
           </header>
